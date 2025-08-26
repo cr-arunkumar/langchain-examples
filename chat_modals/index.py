@@ -1,10 +1,11 @@
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage,AIMessage,HumanMessage
 load_dotenv()
-
+import python_calamine
 # Initialize the GroQ chatbot
-llm=ChatGroq(model="llama-3.3-70b-versatile")
+llm=ChatOpenAI(model="o3-mini")
 
 
 def simple_llm():

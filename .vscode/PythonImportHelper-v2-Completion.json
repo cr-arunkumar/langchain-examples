@@ -1,0 +1,238 @@
+[
+    {
+        "label": "ChatGroq",
+        "importPath": "langchain_groq",
+        "description": "langchain_groq",
+        "isExtraImport": true,
+        "detail": "langchain_groq",
+        "documentation": {}
+    },
+    {
+        "label": "ChatGroq",
+        "importPath": "langchain_groq",
+        "description": "langchain_groq",
+        "isExtraImport": true,
+        "detail": "langchain_groq",
+        "documentation": {}
+    },
+    {
+        "label": "ChatGroq",
+        "importPath": "langchain_groq",
+        "description": "langchain_groq",
+        "isExtraImport": true,
+        "detail": "langchain_groq",
+        "documentation": {}
+    },
+    {
+        "label": "ChatGroq",
+        "importPath": "langchain_groq",
+        "description": "langchain_groq",
+        "isExtraImport": true,
+        "detail": "langchain_groq",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain_core.output_parsers",
+        "description": "langchain_core.output_parsers",
+        "isExtraImport": true,
+        "detail": "langchain_core.output_parsers",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOpenAI",
+        "importPath": "langchain_openai",
+        "description": "langchain_openai",
+        "isExtraImport": true,
+        "detail": "langchain_openai",
+        "documentation": {}
+    },
+    {
+        "label": "SystemMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "AIMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "HumanMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "SystemMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "HumanMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "python_calamine",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "python_calamine",
+        "description": "python_calamine",
+        "detail": "python_calamine",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "chains.index",
+        "description": "chains.index",
+        "peekOfCode": "llm = ChatGroq(model=\"llama-3.3-70b-versatile\")\nprompt_template=ChatPromptTemplate.from_messages(\n    [\n        (\"system\"),\"You are a senior Full stack developer with 20 years of experience build scalable applications.You only provide ans for the technical questions related to your field. For more information\",\n        (\"human\",\"Write a code  {techincal_question}\"),\n    ]\n)\n# Create the combined chains using lang chain expression  syntax\nchain=prompt_template | llm | StrOutputParser()\n# Execute the chain and get the result",
+        "detail": "chains.index",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "chains.index",
+        "description": "chains.index",
+        "peekOfCode": "response = chain.invoke({\n  \"techincal_question\":\"fetch data from a REST API using Typescript and axios requests library. Include error handling and logging in the code.\"\n})\nprint(response)",
+        "detail": "chains.index",
+        "documentation": {}
+    },
+    {
+        "label": "simple_llm",
+        "kind": 2,
+        "importPath": "chat_modals.index",
+        "description": "chat_modals.index",
+        "peekOfCode": "def simple_llm():\n    question = \"What is square root of 49\"\n    answer = llm.invoke(question)\n    # Print the answer\n    print(f\"Answer: {answer}\")\ndef with_converstion():\n    messages=[\n        SystemMessage(content=\"You are a senior Full stack developer with 20 years of experience\"),\n        AIMessage(content=\"I am familiar with Nextjs,Python,AI/ML, Node.js, Tailwindcss, React.js and etc.\"),\n    ]",
+        "detail": "chat_modals.index",
+        "documentation": {}
+    },
+    {
+        "label": "with_converstion",
+        "kind": 2,
+        "importPath": "chat_modals.index",
+        "description": "chat_modals.index",
+        "peekOfCode": "def with_converstion():\n    messages=[\n        SystemMessage(content=\"You are a senior Full stack developer with 20 years of experience\"),\n        AIMessage(content=\"I am familiar with Nextjs,Python,AI/ML, Node.js, Tailwindcss, React.js and etc.\"),\n    ]\n    while True:\n        user_message = input(\"You: \")\n        if user_message.lower() == \"exit\":\n            break\n        messages.append(HumanMessage(content=user_message))",
+        "detail": "chat_modals.index",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "prompt_templates.index",
+        "description": "prompt_templates.index",
+        "peekOfCode": "llm = ChatGroq(model=\"llama-3.3-70b-versatile\")\n# Define the system message\nsystem_message = SystemMessage(content=\"\"\"\nYou are an expert cold email writer with 35 years of experience. \nYour task is to write a professional and compelling cold email for job applications.\nEnsure the email is concise, highlights the applicant's relevant skills, and expresses genuine interest in the company.\n\"\"\")\n# Define the human message template\nhuman_template = \"\"\"Write a cold email for a job application with the following details:\n- Recipient: {recipient_name}",
+        "detail": "prompt_templates.index",
+        "documentation": {}
+    },
+    {
+        "label": "system_message",
+        "kind": 5,
+        "importPath": "prompt_templates.index",
+        "description": "prompt_templates.index",
+        "peekOfCode": "system_message = SystemMessage(content=\"\"\"\nYou are an expert cold email writer with 35 years of experience. \nYour task is to write a professional and compelling cold email for job applications.\nEnsure the email is concise, highlights the applicant's relevant skills, and expresses genuine interest in the company.\n\"\"\")\n# Define the human message template\nhuman_template = \"\"\"Write a cold email for a job application with the following details:\n- Recipient: {recipient_name}\n- Sender: {sender_name}\n- Position: {position}",
+        "detail": "prompt_templates.index",
+        "documentation": {}
+    },
+    {
+        "label": "human_template",
+        "kind": 5,
+        "importPath": "prompt_templates.index",
+        "description": "prompt_templates.index",
+        "peekOfCode": "human_template = \"\"\"Write a cold email for a job application with the following details:\n- Recipient: {recipient_name}\n- Sender: {sender_name}\n- Position: {position}\n- Company: {company}\n- Industry: {industry}\n- Relevant Experience: {relevant_experience}    \n- Reason for Interest: {reason_for_interest}\n- Sender Contact Info: {sender_contact_info}\nThe email should be professional, concise, and tailored to the specific job and company.",
+        "detail": "prompt_templates.index",
+        "documentation": {}
+    },
+    {
+        "label": "prompt_template",
+        "kind": 5,
+        "importPath": "prompt_templates.index",
+        "description": "prompt_templates.index",
+        "peekOfCode": "prompt_template = ChatPromptTemplate.from_messages([system_message ,human_template])\n# Prepare the prompt\nprompt = prompt_template.format_messages(\n    recipient_name=\"John Doe\",\n    sender_name=\"Jane Smith\",\n    position=\"Software Engineer\",\n    company=\"Creole Studios\",\n    industry=\"Technology\",\n    relevant_experience=\"5 years in software development\",\n    reason_for_interest=\"I admire your commitment to innovation and quality.\",",
+        "detail": "prompt_templates.index",
+        "documentation": {}
+    },
+    {
+        "label": "prompt",
+        "kind": 5,
+        "importPath": "prompt_templates.index",
+        "description": "prompt_templates.index",
+        "peekOfCode": "prompt = prompt_template.format_messages(\n    recipient_name=\"John Doe\",\n    sender_name=\"Jane Smith\",\n    position=\"Software Engineer\",\n    company=\"Creole Studios\",\n    industry=\"Technology\",\n    relevant_experience=\"5 years in software development\",\n    reason_for_interest=\"I admire your commitment to innovation and quality.\",\n    sender_contact_info=\"jane.smith@email.com\"\n)",
+        "detail": "prompt_templates.index",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "prompt_templates.index",
+        "description": "prompt_templates.index",
+        "peekOfCode": "response = llm.invoke(prompt)\n# Print the response\nprint(\"\\n\\n--------------------------------\\n\\n\")\nprint(f\"Response:\\n{response.content}\")",
+        "detail": "prompt_templates.index",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "llm = ChatGroq(model=\"llama-3.3-70b-versatile\")",
+        "detail": "main",
+        "documentation": {}
+    }
+]
